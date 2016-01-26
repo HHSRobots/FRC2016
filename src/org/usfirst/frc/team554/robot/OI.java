@@ -1,6 +1,9 @@
 package org.usfirst.frc.team554.robot;
 
+import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
+import edu.wpi.first.wpilibj.buttons.JoystickButton;
+
 import org.usfirst.frc.team554.robot.commands.ExampleCommand;
 
 /**
@@ -14,7 +17,20 @@ public class OI {
     // number it is.
     // Joystick stick = new Joystick(port);
     // Button button = new JoystickButton(stick, buttonNumber);
+	
+	Joystick Ps4 = new Joystick(0);
+	Button L1 = new JoystickButton(Ps4, 5);
+	Button L2 = new JoystickButton(Ps4, 7);
+	Button R1 = new JoystickButton(Ps4, 6);
+	Button R2 = new JoystickButton(Ps4, 8);
+	Button Square = new JoystickButton(Ps4, 1);
+	Button Cross = new JoystickButton(Ps4, 2);
+	Button Circle = new JoystickButton(Ps4, 3);
+    Button Triangle = new JoystickButton(Ps4, 4);
+    Button LStickButton = new JoystickButton(Ps4, 11);
+    Button RStickButton = new JoystickButton(Ps4,12);
     
+	
     // There are a few additional built in buttons you can use. Additionally,
     // by subclassing Button you can create custom triggers and bind those to
     // commands the same as any other Button.
